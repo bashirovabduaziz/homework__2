@@ -1,0 +1,104 @@
+.header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    height: 70px;
+    background: transparent;
+    background: var(--surface, #FFF);
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    &__img{
+        width: 50px;
+        height: 50px;
+    }
+    &__logos{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #414141;
+        margin-right: 50px;
+    }
+    &__menu{
+        color: var(--main-on-secondary, #FFF);
+text-align: center;
+
+/* Desc/Text/S */
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+border-radius: 4px;
+background: var(--main-secondary, #70C05B);
+display: flex;
+width: 140px;
+padding: 8px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+text-decoration: none;
+transition: .55s ease;
+    }
+    &__menu:hover{
+       color: #70C05B;
+       background-color: #FFF;
+       border: 2px solid #70C05B;
+    }
+    &__search{
+        color: var(--grayscale-hard, #8F8F8F);
+
+/* Desc/Text/S */
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+border-radius: 4px;
+border: 1px solid var(--main-secondary, #70C05B);
+background: var(--main-surface, #FFF);
+width: 300px;
+justify-content: space-between;
+height: 40px;
+align-items: center;
+padding: 8px;
+text-decoration: none;
+transition: .55s all;
+    }
+    &__search:hover{
+       box-shadow: 5px 5px 5px #70C05B;
+    }
+   &__icons{
+    width: 24px;
+height: 24px;
+
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-top: -10px;
+   }
+   &__text{
+    color: var(--main-on-surface, #414141);
+    text-align: center;
+    
+    /* Desc/Text/XS */
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: -15px;
+   }
+   &__select{
+    display: flex;
+
+flex-direction: column;
+align-items: flex-start;
+border: none;
+cursor: pointer;
+   }
+}
