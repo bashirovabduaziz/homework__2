@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>северяночка</title>
+    
+    <!--website icon link-->
+    <link rel="shortcut icon" href="./img/logo.svg" type="x-icon">
 
     <!--css link-->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!--modal css link-->
+    <link rel="stylesheet" href="./css/modal.css">
+    
+    <!--modal css link-->
+    <link rel="stylesheet" href="./css/modal.css">
+    
     <!--remixicons link-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -23,14 +32,28 @@
         <div class="header__logo">
             <a href="#" class="header__logos"><img src="./img/photo_2023-07-09_22-43-22.jpg" alt="" class="header__img">северяночка</a>
         </div>
-        <a href="#" class="header__menu"><span class="header__searchspan"><i class="ri-menu-line header__iconsearch"></i></span>Каталог</a>
-        <a href="#" class="header__search">Найти товар<i class="ri-search-line header__icon"></i></a>
+        <a href="./tovar.html" class="header__menu"><span class="header__searchspan"><i class="ri-menu-line header__iconsearch"></i></span>Каталог</a>
+        <div class="header__search">
+        <input type="text" placeholder="Найти товар"  class="header__input">
+        <i class="ri-search-line"></i>
+    </div>
         <div class="header__icons"><i class="ri-heart-line header__icon" ></i><br><p class="header__text">Избранное</p></div>
         <div class="header__icons"><i class="ri-inbox-unarchive-line"></i><br><p class="header__text">Заказы</p></div>
         <div class="header__icons"><i class="ri-shopping-cart-line"></i><br><p class="header__text">Корзина</p></div>
-        <select name="" id="" class="header__select">
-            <option value="Aleksey">Алексей</option>
-        </select>
+        <button class="btn-open">Алексей<i class="ri-arrow-down-s-fill"></i></button>
+        <div class="modal active" id="modal">
+            <div class="modal-content">
+            <button class="btn-close" ><i class="ri-close-circle-fill"></i></button>
+            <h1 class="title">Вход</h1>
+            <input type="number" placeholder="наберите свой номер" class="input">
+            <br>
+            <button class="button">Вход</button>
+            <div class="btns">
+            <button class="btn">Регистрация</button>
+            <a href="#" class="item">Забыли пароль?</a>
+        </div>
+    </div>
+    </div>
     </header>
     <div class="hero">
         <div class="hero__container">
@@ -108,6 +131,6 @@
     </footer>
 
     <!-- js link -->
-    <script src="./js/index.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
